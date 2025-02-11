@@ -1,0 +1,120 @@
+@media (min-width: 1020px) {
+    
+html {
+    font-size: clamp(16px, 1vw, 20px);
+}
+
+@mixin arrow {
+    width: 35px;
+    height: 35px;
+}
+    // ======= NAVBER ======= 
+    header {
+        width: 45%;
+
+        nav {
+            width: 80%;
+            justify-content: flex-end;
+            gap: 15px;
+            // background: red;
+            ul {
+                display: flex;
+                // gap: 5px;
+            }
+
+            .menu-bar {
+                display: none;
+            }
+        }
+    }
+
+    // ======= HERO SECTION ======= 
+    
+    #hero-sec {
+        .container {
+            width: 70%;
+            margin: auto;
+            gap: 0px;
+            img {
+                width: 50%;
+                margin-top: 5%;
+            }
+            h1 {
+                font-size: 6rem;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 1.2rem;
+                opacity: 70%;
+                br {
+                    display: block;
+                }
+            }
+
+            a {
+                font-size: .8rem;
+                i {
+                    font-size: 1.2rem;
+                    width: 40px;
+                    height: 40px;
+                    opacity: 70%;
+                }
+            }
+        }
+    }
+
+
+// ======= MARQUEE SECTION ======= 
+#slide-show {
+    margin-bottom: 0;
+    .marquee {
+        width: 70%;
+    }
+}
+
+// ======= CARD SECTION ======= 
+#card-sec {
+    height: 60%;
+    padding: 0 4rem;
+
+    .card-container {
+        gap: 0;
+        flex-direction: row;
+        .card {
+            width: 32%;
+            height: 70%;
+            h2 {
+                font-size: 1.5rem;
+            }
+            a {
+                i {
+                    @include arrow;
+                }
+                span {
+                    font-size: .8rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+// ======= WORK SECTION ======= 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
